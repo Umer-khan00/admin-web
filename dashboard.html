@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <div class="side-header">
+            <h3><span>Logo</span></h3>
+        </div>
+        <!-- sidebar part  -->
+        <div class="side-content">
+            <div class="profile">
+                <div class="profile-img bg-img" style="background-image: url(naw_img/V.jpeg)"></div>
+                <h4>ADMIN</h4>
+                <small>Phto-Tiles Admin</small>
+            </div>
+            <!-- side bar items -->
+            <div class="side-menu">
+                <ul>
+                    <li>
+                        <a href="dashboard.html" class="active">
+                            <span class="las la-home"></span>
+                            <small>Dashboard</small>
+                        </a>
+                    </li>
+                    <!-- <li>
+                       <a href="index.html">
+                            <span class="las la-user-alt"></span>
+                            <small>Profile</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                            <span class="las la-envelope"></span>
+                            <small>Mailbox</small>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="prodadmin.html">
+                            <span class="las la-clipboard-list"></span>
+                            <small>Product <br> Management</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="order history.html">
+                            <span class="las la-shopping-cart"></span>
+                            <small>Orders</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reviews.html">
+                            <span class="las la-tasks"></span>
+                            <small>Reviews</small>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <!-- top part with icons  -->
+        <!-- start -->
+        <header>
+            <!-- style="background-color: #34425A;" -->
+            <div class="header-content">
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+
+                <div class="header-menu">
+                    <!-- <label for="">
+                        <span class="las la-search"></span>
+                    </label> -->
+                    <form class="d-flex">
+                        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button> -->
+                        <a href="../USER/index.html" class="me-4"><img
+                                src="https://cdn-icons-png.flaticon.com/128/7710/7710466.png"
+                                style="width: 2rem;height: 2rem;"></a>
+                    </form>
+
+                    <div class="notify-icon">
+                        <span class="las la-envelope"></span>
+                        <span class="notify">4</span>
+                    </div>
+
+                    <div class="notify-icon">
+                        <span class="las la-bell"></span>
+                        <span class="notify">3</span>
+                    </div>
+
+                    <!-- <div class="user">
+                        <div class="bg-img" style="background-image: url(img/4.jpeg)"></div>
+
+                        <span class="las la-power-off"></span>
+                        <span>Logout</span>
+                    </div> -->
+                    <!-- <div class="mb-1"><a href="index.html"><img src="https://cdn-icons-png.flaticon.com/128/3024/3024605.png" style="width: 1.2rem; height: 1.2rem; font-weight: bold;"></a></div> -->
+
+                    <div class="dropdown mb-1">
+                        <button class=" dropdown-toggle btn btn-outline-success" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/128/3024/3024605.png"
+                                    style="width: 1.2rem; height: 1.2rem; font-weight: bold;"></a>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="dashboard.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="dashboard.html">Setting</a></li>
+                            <li><button type="submit" class="dropdown-item" id="logout">Log Out</button></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- end -->
+
+        <!-- STATS DIV start     -->
+        <main>
+            <div class="page-header">
+                <h1>Dashboard</h1>
+                <small>Home / Dashboard</small>
+            </div>
+
+            <div class="page-content">
+
+                <div class="analytics">
+
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>107,200</h2>
+                            <span class="las la-user-friends"></span>
+                        </div>
+                        <div class="card-progress">
+                            <small>New users</small>
+                            <div class="card-indicator">
+                                <div class="indicator one" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>340,230</h2>
+                            <span class="las la-eye"></span>
+                        </div>
+                        <div class="card-progress">
+                            <small>Page views</small>
+                            <div class="card-indicator">
+                                <div class="indicator two" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>$653,200</h2>
+                            <span class="las la-shopping-cart"></span>
+                        </div>
+                        <div class="card-progress">
+                            <small>Monthly revenue growth</small>
+                            <div class="card-indicator">
+                                <div class="indicator three" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>23,500</h2>
+                            <span class="las la-envelope"></span>
+                        </div>
+                        <div class="card-progress">
+                            <small>New E-mails received</small>
+                            <div class="card-indicator">
+                                <div class="indicator four" style="width: 20%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END -->
+
+                <!-- FINDING ENTRIES TABLE -->
+                <!-- INPUT PART -->
+                <div class="records table-responsive">
+
+                    <div class="record-header">
+                        <div class="add">
+                            <span>Entries</span>
+                            <select name="" id="">
+                                <option value="">ID</option>
+                            </select>
+                            <button>Add record</button>
+                        </div>
+
+                        <div class="browse">
+                            <input type="search" placeholder="Search" class="record-search">
+                            <select name="" id="">
+                                <option value="">Status</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- END OF INPUT ROW  -->
+                    <!-- USER DETAILS TABLE HEAD  -->
+                    <div>
+                        <table width="100%">
+                            <thead>
+                                <tr>
+                                    <th># ID</th>
+                                    <th><span class="las la-sort"></span> CLIENT</th>
+                                    <th><span class="las la-sort"></span> TOTAL</th>
+                                    <th><span class="las la-sort"></span> USER SINCE</th>
+                                    <th><span class="las la-sort"></span> BALANCE</th>
+                                    <th><span class="las la-sort"></span> ACTIONS</th>
+                                </tr>
+                            </thead>
+                            <!-- DETAIL OF USERS  -->
+                            <!-- USER 1 -->
+                            <tbody>
+                                <tr>
+                                    <td>#5033</td>
+                                    <td>
+                                        <div class="client">
+                                            <div class="client-img bg-img" style="background-image: url(naw_img/X.jpg)">
+                                            </div>
+                                            <div class="client-info">
+                                                <h4>USER X</h4>
+                                                <small>x@sover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        Rs3171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        - Rs20
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- USER 2     -->
+                                <tr>
+                                    <td>#5033</td>
+                                    <td>
+                                        <div class="client">
+                                            <div class="client-img bg-img" style="background-image: url(naw_img/Y.jpg)">
+                                            </div>
+                                            <div class="client-info">
+                                                <h4>USER Y</h4>
+                                                <small>Y@.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $3171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        -$205
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- USER 3 -->
+                                <tr>
+                                    <td>#5033</td>
+                                    <td>
+                                        <div class="client">
+                                            <div class="client-img bg-img" style="background-image: url(naw_img/Z.jpg)">
+                                            </div>
+                                            <div class="client-info">
+                                                <h4>USER Z</h4>
+                                                <small>Z@.com</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $2171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        <span class="paid">Paid</span>
+                                    </td>
+                                    <!-- end  -->
+                                    <!-- we can add more users as many as they sign up and maintain History -->
+
+
+
+
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Showing 5 Out Of 25 Entries
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <button class="own-btn"><img
+                                                src="https://cdn-icons-png.flaticon.com/128/3415/3415823.png"></button>
+                                        <button class="own-btn">2</button>
+                                        <button class="own-btn"><img
+                                                src="https://cdn-icons-png.flaticon.com/128/3114/3114931.png"></button>
+                                    </td>
+                                </tr>
+                                <!-- <tr>
+                                    <td>#5033</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" style="background-image: url(img/3.jpeg)"></div>
+                                            <div class="client-info">
+                                                <h4>Andrew Bruno</h4>
+                                                <small>bruno@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $3171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        -$205
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#5033</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" style="background-image: url(img/1.jpeg)"></div>
+                                            <div class="client-info">
+                                                <h4>Exty Bruno</h4>
+                                                <small>exty@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $3171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        <span class="paid">Paid</span>
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#5033</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" style="background-image: url(img/1.jpeg)"></div>
+                                            <div class="client-info">
+                                                <h4>Exty Bruno</h4>
+                                                <small>exty@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $2171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        <span class="paid">Paid</span>
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#5033</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" style="background-image: url(img/3.jpeg)"></div>
+                                            <div class="client-info">
+                                                <h4>Andrew Bruno</h4>
+                                                <small>bruno@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $3171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        -$205
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#5033</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" style="background-image: url(img/1.jpeg)"></div>
+                                            <div class="client-info">
+                                                <h4>Exty Bruno</h4>
+                                                <small>exty@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $3171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        -$205
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#5033</td>
+                                    <td>
+                                        <div class="client">
+                                           <div class="client-img bg-img" style="background-image: url(img/1.jpeg)"></div>
+                                            <div class="client-info">
+                                                <h4>Exty Bruno</h4>
+                                                <small>exty@crossover.org</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        $2171
+                                    </td>
+                                    <td>
+                                        19 April, 2022
+                                    </td>
+                                    <td>
+                                        <span class="paid">Paid</span>
+                                    </td>
+                                    <td>
+                                        <div class="actions">
+                                            <span class="lab la-telegram-plane"></span>
+                                            <span class="las la-eye"></span>
+                                            <span class="las la-ellipsis-v"></span>
+                                        </div>
+                                    </td>
+                                </tr> -->
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyBGxPO4pN2qegI9XRs-BF-fYtDhM8H5FVQ",
+        authDomain: "phototiles-db.firebaseapp.com",
+        databaseURL: "https://phototiles-db-default-rtdb.firebaseio.com",
+        projectId: "phototiles-db",
+        storageBucket: "phototiles-db.appspot.com",
+        messagingSenderId: "956027944112",
+        appId: "1:956027944112:web:57b49dbb47973f658a0f75",
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const signup = document.getElementById('signup');
+        const login = document.getElementById('login');
+
+        // signup.addEventListener("click", (e) => {
+        //     e.preventDefault()
+        //     var email = document.getElementById('email').value;
+        //     var password = document.getElementById('password').value;
+        //     var username = document.getElementById('username').value;
+
+        //   createUserWithEmailAndPassword(auth, email, password)
+        //     .then((userCredential) => {
+        //       // Signed up
+        //       const user = userCredential.user;
+
+        //       set(ref(database, 'users/' + user.uid),{
+        //         username: username,
+        //         email: email
+        //       })
+        //       .then(() => {
+        //       alert("User Signed Up!");
+        //       // Redirect to dashboard.html
+        //       window.location.href = "dashboard.html";
+        //     })
+        //   })
+        //     .catch((error) => {
+        //       const errorCode = error.code;
+        //       const errorMessage = error.message;
+        //       alert(errorMessage);
+        //       // ..
+        //     });
+        // });
+
+        // login.addEventListener("click", (e) => {
+        //   e.preventDefault();
+        //   var email = document.getElementById('email').value;
+        //   var password = document.getElementById('password').value;
+
+        //   signInWithEmailAndPassword(auth, email, password)
+        //     .then((userCredential) => {
+        //       // Signed in 
+        //       const user = userCredential.user;
+        //       const dt = new Date();
+        //       update(ref(database, 'users/' + user.uid), {
+        //         last_login: dt,
+        //       })
+        //     .then(() => {
+        //       alert("User Logged In!");
+        //       // Redirect to dashboard.html
+        //       window.location.href = "dashboard.html";
+        //     })
+        //   })
+        //     .catch((error) => {
+        //       const errorCode = error.code;
+        //       const errorMessage = error.message;
+        //       alert(errorMessage);
+        //     });
+        // });
+
+        const logout = document.getElementById('logout');
+        logout.addEventListener("click", (e) => {
+            e.preventDefault();
+            signOut(auth).then(() => {
+                // Sign-out successful.
+                alert("Log Out Successfully!");
+                // Redirect to dashboard.html
+                window.location.href = "index.html";
+            }).catch((error) => {
+                // An error happened.
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                alert(errorMessage);
+            });
+        });
+
+        const user = auth.currentUser;
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                // User is signed in
+                console.log("User is signed in:", user.uid);
+            } else {
+                // User is signed out
+                console.log("User is signed out");
+            }
+        });
+
+
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="reviews.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <title>Reviews</title>
+</head>
+
+<body>
+
+    <input type="checkbox" id="menu-toggle">
+    <div class="sidebar">
+        <div class="side-header">
+            <h3><span>Logo</span></h3>
+        </div>
+        <!-- sidebar part  -->
+        <div class="side-content">
+            <div class="profile">
+                <div class="profile-img bg-img" style="background-image: url(naw_img/V.jpeg)"></div>
+                <h4>ADMIN</h4>
+                <small>Phto-Tiles Admin</small>
+            </div>
+<!-- side bar items -->
+            <div class="side-menu">
+                <ul>
+                    <li>
+                       <a href="dashboard.html">
+                            <span class="las la-home"></span>
+                            <small>Dashboard</small>
+                        </a>
+                    </li>
+                    <!-- <li>
+                       <a href="dashboard.html">
+                            <span class="las la-user-alt"></span>
+                            <small>Profile</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="">
+                            <span class="las la-envelope"></span>
+                            <small>Mailbox</small>
+                        </a>
+                    </li> -->
+                    <li>
+                       <a href="prodadmin.html">
+                            <span class="las la-clipboard-list"></span>
+                            <small>Product <br> Management</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="order history.html">
+                            <span class="las la-shopping-cart"></span>
+                            <small>Orders</small>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="reviews.html"  class="active">
+                            <span class="las la-tasks"></span>
+                            <small>Reviews</small>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-content">
+        <!-- top part with icons  -->
+        <!-- start -->
+        <header>
+            <!-- style="background-color: #34425A;" -->
+            <div class="header-content">
+                <label for="menu-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+
+                <div class="header-menu">
+                    <!-- <label for="">
+                        <span class="las la-search"></span>
+                    </label> -->
+                    <form class="d-flex">
+                        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button> -->
+                        <a href="../USER/index.html" class="me-4"><img src="https://cdn-icons-png.flaticon.com/128/7710/7710466.png" style="width: 2rem;height: 2rem;" ></a>
+                    </form>
+
+                    <div class="notify-icon">
+                        <span class="las la-envelope"></span>
+                        <span class="notify">4</span>
+                    </div>
+
+                    <div class="notify-icon">
+                        <span class="las la-bell"></span>
+                        <span class="notify">3</span>
+                    </div>
+
+                    <!-- <div class="user">
+                        <div class="bg-img" style="background-image: url(img/4.jpeg)"></div>
+
+                        <span class="las la-power-off"></span>
+                        <span>Logout</span>
+                    </div> -->
+                    <!-- <div class="mb-1"><a href="index.html"><img src="https://cdn-icons-png.flaticon.com/128/3024/3024605.png" style="width: 1.2rem; height: 1.2rem; font-weight: bold;"></a></div> -->
+
+                    <div class="dropdown mb-1">
+                        <button class=" dropdown-toggle btn btn-outline-success" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/128/3024/3024605.png" style="width: 1.2rem; height: 1.2rem; font-weight: bold;"></a>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="dashboard.html">Profile</a></li>
+                          <li><a class="dropdown-item" href="dashboard.html">Setting</a></li>
+                          <li><a class="dropdown-item" href="index.html">Log Out</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+        <!-- end -->
+
+<!-- STATS DIV start     -->
+        <main>
+            <div class="page-header">
+                <h1>Reviews</h1>
+                <small>Home / Reviews</small>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card  border border-danger">
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-4">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Reviews</h4>
+                                        <h5 class="card-subtitle">Overview of Review</h5>
+                                        <h2 class="font-medium mt-5 mb-0">25426</h2>
+                                        <span class="text-muted">This month we got <b>346</b> New Reviews</span>
+                                        <div class="image-box mt-5 mb-4">
+                                            <a href="#" class="mr-2" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Simmons"><img
+                                                    src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                                                    class="rounded-circle" width="45" alt="user"></a>
+                                            <a href="#" class="mr-2" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Fitz"><img
+                                                    src="https://bootdey.com/img/Content/avatar/avatar2.png"
+                                                    class="rounded-circle" width="45" alt="user"></a>
+                                            <a href="#" class="mr-2" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Phil"><img
+                                                    src="https://bootdey.com/img/Content/avatar/avatar3.png"
+                                                    class="rounded-circle" width="45" alt="user"></a>
+                                            <a href="#" class="mr-2" data-toggle="tooltip" data-placement="top" title=""
+                                                data-original-title="Melinda"><img
+                                                    src="https://bootdey.com/img/Content/avatar/avatar4.png"
+                                                    class="rounded-circle" width="45" alt="user"></a>
+                                            <a href=""><img src="https://bootdey.com/img/Content/avatar/avatar1.png"
+                                                    alt="" style="border-radius: 50%; width: 3rem; height: 3rem;"></a>
+                                            <!-- myself -->
+                                        </div>
+                                        <a href="javascript:void(0)"
+                                            class="btn btn-lg btn-info waves-effect waves-light mt-4">Checkout All
+                                            Reviews</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-lg-8 border-left">
+                                    <div class="card-body">
+                                        <ul class="list-style-none">
+                                            <li class="mt-5">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa fa-smile-o display-5 text-muted me-3"></i>
+                                                    <div>
+                                                        <h5 class="mb-0">Positive Reviews</h5>
+                                                        <span class="text-muted">25547 Reviews</span>
+                                                        <!-- span ki jaga p use krney sey icon ki height sey level mein nhi aa raha thaa -->
+                                                    </div>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-success" role="progressbar"
+                                                        style="width: 67%" aria-valuenow="47" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </li>
+                                            <li class="mt-5">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa fa-frown-o display-5 text-muted me-3"></i>
+                                                    <div class="ml-2">
+                                                        <h5 class="mb-0">Negative Reviews</h5>
+                                                        <span class="text-muted">547 Reviews</span>
+                                                    </div>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-orange" role="progressbar"
+                                                        style="width: 13%" aria-valuenow="33" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </li>
+                                            <li class="mt-5 mb-5">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa fa-meh-o display-5 text-muted me-3"></i>
+                                                    <div>
+                                                        <h5 class="mb-0">Neutral Reviews</h5>
+                                                        <span class="text-muted">5547 Reviews</span>
+                                                    </div>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar bg-info" role="progressbar"
+                                                        style="width: 40%" aria-valuenow="20" aria-valuemin="0"
+                                                        aria-valuemax="100"></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+            </script>
+</body>
+
+</html>
+
+<!-- <div class="col-sm-12 col-lg-8 border-left">
+    <div class="card-body">
+        <ul class="list-style-none">
+            <li class="mt-4">
+                <div class="d-flex align-items-center">
+                    <i class="fa fa-smile-o display-5 text-muted"></i>
+                    <div class="ml-2">
+                        <h5 class="mb-0">Positive Reviews</h5>
+                        <span class="text-muted">25547 Reviews</span>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 47%" aria-valuenow="47"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </li>
+            <li class="mt-5">
+                <div class="d-flex align-items-center">
+                    <i class="fa fa-frown-o display-5 text-muted"></i>
+                    <div class="ml-2">
+                        <h5 class="mb-0">Negative Reviews</h5>
+                        <span class="text-muted">5547 Reviews</span>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-orange" role="progressbar" style="width: 33%" aria-valuenow="33"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </li>
+            <li class="mt-5 mb-5">
+                <div class="d-flex align-items-center">
+                    <i class="fa fa-meh-o display-5 text-muted"></i>
+                    <div class="ml-2">
+                        <h5 class="mb-0">Neutral Reviews</h5>
+                        <span class="text-muted">547 Reviews</span>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div> -->
